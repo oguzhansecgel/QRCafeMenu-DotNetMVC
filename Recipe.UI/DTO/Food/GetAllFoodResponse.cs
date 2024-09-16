@@ -1,4 +1,6 @@
-﻿namespace CafeMenum.UI.DTO.Food
+﻿using CafeMenum.UI.DTO.FoodImage;
+
+namespace CafeMenum.UI.DTO.Food
 {
     public class GetAllFoodResponse
     {
@@ -11,5 +13,8 @@
         public double foodPrice;
 
         public int categoryId;
+
+        public string ImageUrl { get; set; }
+
     }
 }

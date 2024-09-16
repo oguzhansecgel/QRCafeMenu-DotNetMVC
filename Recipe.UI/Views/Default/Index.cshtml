@@ -3,7 +3,7 @@
     Layout = null;
 }
 
-<!DOCTYPE html>
+
 
 <!DOCTYPE html>
 <html>
@@ -261,10 +261,10 @@
       </div>
 
             @await Component.InvokeAsync("_CategoryPartial")
-            @await Component.InvokeAsync("_ContentPartial")
 
-
-      <div class="btn-box">
+            <div id="content">
+            </div>
+            <div class="btn-box">
         <a href="">
           View More
         </a>
@@ -276,11 +276,11 @@
 
 
   <!-- footer section -->
-    @await Component.InvokeAsync("_FooterPartial");
+    @await Component.InvokeAsync("_FooterPartial")
   <!-- footer section -->
 
  
-  @await Component.InvokeAsync("_ScriptPartial");
+  @await Component.InvokeAsync("_ScriptPartial")
 </body>
 
 </html>

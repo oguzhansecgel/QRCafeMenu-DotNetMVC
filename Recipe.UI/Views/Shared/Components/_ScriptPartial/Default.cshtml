@@ -23,3 +23,25 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
 </script>
 <!-- End Google Map -->
+
+<script>
+    function getContentDetail(categoryId) {
+        console.log('Category ID passed:', categoryId);  // Debugging log
+        $("#content").empty();
+        var _url = 'GetContentDetail?categoryId=' + categoryId;
+        $.ajax({
+            type: "GET",
+            url: _url,
+            success: function (result) {
+                console.log('Success:', result);  // Debugging log
+                $("#content").html(result);
+            },
+            error: function (xhr, status, error) {
+                console.error('AJAX Error:', status, error);
+            }
+        });
+    }
+
+
+
+</script>

@@ -8,5 +8,13 @@ namespace CafeMenum.UI.Controllers
         {
             return View();
         }
+
+        public IActionResult GetContentDetail([FromQuery] int categoryId)
+        {
+            return ViewComponent("_ContentPartial", new
+            {
+                categoryId = categoryId
+            });
+        }
     }
 }

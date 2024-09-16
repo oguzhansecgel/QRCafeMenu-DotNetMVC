@@ -5,10 +5,10 @@
 @{
 }
 <ul class="filters_menu">
-    <li class="active" data-filter="*">All</li>
     @foreach (var item in Model)
     {
-        <li data-filter="">@item.categoryName</li>
-
-    } 
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" onclick="getContentDetail('@item.id')">@item.categoryName</button>
+        </li>
+    }
 </ul>
