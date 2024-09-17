@@ -6,7 +6,7 @@ Backend kodlarına ulaşmak için : https://github.com/oguzhansecgel/QRCafeMenu-
 ##Proje Görselleri
 
 ## Hakkında Sayfası
-![About Sayfası]([[https://raw.githubusercontent.com/oguzhansecgel/QRCafeMenu-DotNetMVC/master/Recipe.UI/wwwroot/about.png?token=GHSAT0AAAAAACN2GM7AXBD6EXZDOFP2U4NGZXJP4FQ](https://github.com/oguzhansecgel/QRCafeMenu-DotNetMVC/blob/master/Recipe.UI/wwwroot/about.png?raw=true)](https://raw.githubusercontent.com/oguzhansecgel/QRCafeMenu-DotNetMVC/master/Recipe.UI/wwwroot/about.png))
+![About Sayfası](https://raw.githubusercontent.com/oguzhansecgel/QRCafeMenu-DotNetMVC/master/Recipe.UI/wwwroot/about.png)
 
 ## Menü Sayfası
 ![Menü Sayfası]([[https://raw.githubusercontent.com/oguzhansecgel/QRCafeMenu-DotNetMVC/master/Recipe.UI/wwwroot/menu.png?token=GHSAT0AAAAAACN2GM7AZ7B72RI2QEN444TUZXJP5BA](https://github.com/oguzhansecgel/QRCafeMenu-DotNetMVC/blob/master/Recipe.UI/wwwroot/menu.png?raw=true)](https://github.com/oguzhansecgel/QRCafeMenu-DotNetMVC/blob/master/Recipe.UI/wwwroot/menu.png))
