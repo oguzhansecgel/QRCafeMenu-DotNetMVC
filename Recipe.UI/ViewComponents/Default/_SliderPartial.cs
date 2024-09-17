@@ -1,15 +1,16 @@
 ﻿using CafeMenum.UI.DTO.About;
-using CafeMenum.UI.DTO.FooterContact;
+using CafeMenum.UI.DTO.Category;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 namespace CafeMenum.UI.ViewComponents.Default
 {
-    public class _FooterPartial : ViewComponent
+    public class _SliderPartial : ViewComponent
     {
+
         private readonly IHttpClientFactory _httpClientFactory;
 
-        public _FooterPartial(IHttpClientFactory httpClientFactory)
+        public _SliderPartial(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
 
@@ -17,15 +18,14 @@ namespace CafeMenum.UI.ViewComponents.Default
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var client = _httpClientFactory.CreateClient();
-            var responserMessage = await client.GetAsync("http://localhost:8080/api/contact/getAllContact");
+            var responserMessage = await client.GetAsync("http://localhost:8080/api/about/getAllAbout");
             if (responserMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responserMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<FooterContactResponse>>(jsonData);
+                var values = JsonConvert.DeserializeObject<List<GetAllAboutResponse>>(jsonData);
                 return View(values);
             }
             return View();
         }
-
     }
 }

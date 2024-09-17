@@ -8,7 +8,7 @@
     @foreach (var item in Model)
     {
         <li class="nav-item" role="presentation">
-            <button class="nav-link" onclick="getContentDetail('@item.id')">@item.categoryName</button>
+            <a class="nav-link" onclick="getContentDetail('@item.id')">@item.categoryName</a>
         </li>
     }
 </ul>
